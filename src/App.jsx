@@ -47,24 +47,26 @@ export default function App() {
 
   return (
     <div className="app">
-      <header className="app__header">
-        <h1 className="app__title">Animes recomendados</h1>
-        <p className="app__subtitle">
-          Tarjetas en React reutilizando componentes y pasando props
-        </p>
-      </header>
+      <div className="app__container">
+        <header className="app__header">
+          <h1 className="app__title">Animes recomendados</h1>
+          <p className="app__subtitle">
+            Tarjetas en React reutilizando componentes y pasando props
+          </p>
+        </header>
 
-      <main className="app__grid">
-        {animes.map((anime) => (
-          <Card
-            key={anime.id}
-            image={anime.image}
-            title={anime.title}
-            genre={anime.genre}
-            description={anime.description}
-          />
-        ))}
-      </main>
+        <main className="app__grid">
+          {animes.map((anime) => (
+            <Card
+              key={anime.id}
+              image={anime.image}
+              title={anime.title}
+              genre={anime.genre}
+              description={anime.description}
+            />
+          ))}
+        </main>
+      </div>
     </div>
   );
 }

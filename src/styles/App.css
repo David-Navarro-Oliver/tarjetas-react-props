@@ -1,25 +1,46 @@
+:root {
+  --page-bg: #0b0f19;
+  --surface: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.72);
+}
+
 .app {
-  padding: 24px;
-  font-family: system-ui, Arial, sans-serif;
+  min-height: 100vh;
+  padding: 40px 16px;
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(120, 119, 198, 0.25), transparent 60%),
+              radial-gradient(1000px 500px at 80% 20%, rgba(56, 189, 248, 0.18), transparent 55%),
+              var(--page-bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.app__container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .app__header {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
+  text-align: center;
 }
 
 .app__title {
   margin: 0;
-  font-size: 28px;
+  font-size: 34px;
+  letter-spacing: 0.2px;
 }
 
 .app__subtitle {
-  margin-top: 6px;
-  opacity: 0.75;
+  margin: 10px 0 0 0;
+  color: var(--muted);
 }
 
 .app__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
   align-items: start;
 }
