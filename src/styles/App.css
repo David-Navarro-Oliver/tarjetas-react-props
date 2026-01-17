@@ -2,3 +2,24 @@
   padding: 24px;
   font-family: system-ui, Arial, sans-serif;
 }
+
+.app__header {
+  margin-bottom: 24px;
+}
+
+.app__title {
+  margin: 0;
+  font-size: 28px;
+}
+
+.app__subtitle {
+  margin-top: 6px;
+  opacity: 0.75;
+}
+
+.app__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
