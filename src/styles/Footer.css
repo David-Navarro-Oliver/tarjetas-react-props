@@ -1,0 +1,11 @@
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 14px;
+}

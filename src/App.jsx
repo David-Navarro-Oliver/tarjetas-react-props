@@ -1,3 +1,5 @@
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 import Card from "./components/Card.jsx";
 import "./styles/App.css";
 import demonSlayerImg from "./assets/demon-slayer.jpg";
@@ -6,7 +8,6 @@ import onePieceImg from "./assets/one-piece.jpg";
 import dragonBallImg from "./assets/dragon-ball.jpg";
 import slimeImg from "./assets/reincarnated-as-a-slime.jpg";
 import jujutsuImg from "./assets/jujutsu-kaisen.jpg";
-
 
 export default function App() {
   const animes = [
@@ -63,12 +64,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="app__container">
-        <header className="app__header">
-          <h1 className="app__title">Animes recomendados</h1>
-          <p className="app__subtitle">
-            Tarjetas en React reutilizando componentes y pasando props
-          </p>
-        </header>
+        <Header />
 
         <main className="app__grid">
           {animes.map((anime) => (
@@ -81,6 +77,8 @@ export default function App() {
             />
           ))}
         </main>
+
+        <Footer />
       </div>
     </div>
   );
