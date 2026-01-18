@@ -65,6 +65,7 @@ src/
 ├── App.jsx
 ├── index.css
 └── main.jsx
+```
 
 ## 🎨 Estilos
 
@@ -82,19 +83,28 @@ src/
 - JavaScript (ES6+)
 - CSS
 
+## 📸 Captura del proyecto
+
+Vista general de la aplicación mostrando las tarjetas de animes renderizadas mediante componentes reutilizables en React.
+
+![Captura del proyecto](screenshots/project-anime.jpg)
+
 ## ▶️ Cómo ejecutar el proyecto
 
-1. Clonar el repositorio:
 ```bash
-git clone 
-```
+1. Clonar el repositorio:
+git clone https://github.com/David-Navarro-Oliver/tarjetas-react-props
 
 2. Instalar dependencias:
-```bash
 npm install
-```
 
 3. Ejecutar en modo desarrollo:
-```bash
 npm run dev
 ```
+
+---
+
+## 👤 Autor
+
+David Navarro  
+Proyecto realizado como ejercicio práctico de React para la creación y reutilización de componentes utilizando props.
