@@ -9,12 +9,14 @@
   width: 100%;
   max-width: 340px;
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 8px;
   overflow: hidden;
   background: var(--surface);
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
   transform: translateZ(0);
+  border: 1px solid #b88a2a;
+  background-color: #1a1611;
 }
 
 .card__image {
@@ -25,7 +27,9 @@
 }
 
 .card__content {
-  padding: 14px 14px 16px 14px;
+  padding: 16px;
+  background-color: #262016;
+  border-top: 1px solid #a67c2a;
 }
 
 .card__title {
