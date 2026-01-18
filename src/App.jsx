@@ -66,17 +66,19 @@ export default function App() {
       <div className="app__container">
         <Header />
 
-        <main className="app__grid">
-          {animes.map((anime) => (
-            <Card
-              key={anime.id}
-              image={anime.image}
-              title={anime.title}
-              genre={anime.genre}
-              description={anime.description}
-            />
-          ))}
-        </main>
+        <div className="app__content">
+          <main className="app__grid">
+            {animes.map((anime) => (
+              <Card
+                key={anime.id}
+                image={anime.image}
+                title={anime.title}
+                genre={anime.genre}
+                description={anime.description}
+              />
+            ))}
+          </main>
+        </div>
 
         <Footer />
       </div>
