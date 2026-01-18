@@ -1,13 +1,25 @@
+:root {
+  --page-bg: #0b0f19;
+  --surface: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.72);
+}
+
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 
 body {
-  background-color: #0b0f19;
+  background:
+    radial-gradient(farthest-corner at 20% 10%, rgba(120, 119, 198, 0.28), transparent 65%),
+    radial-gradient(farthest-corner at 80% 20%, rgba(56, 189, 248, 0.20), transparent 62%),
+    var(--page-bg);
+  color: var(--text);
 }
