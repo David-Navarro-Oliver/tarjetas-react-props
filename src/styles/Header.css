@@ -1,0 +1,14 @@
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header__subtitle {
+  margin-top: 8px;
+  opacity: 0.7;
+}
